@@ -344,6 +344,7 @@ button{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .project-content h1 {
@@ -359,22 +360,52 @@ button{
 }
 
 .placeholder {
-  transform: translateY(200px);
-  margin: var(--mb-1);
-
   height: 130px;
   width: 230px;
   border-radius: 20px;
+  margin: var(--mb-1);
+  transform: translateY(200px);
   background: var(--dark-color);
   filter: drop-shadow(0px 4px 0px rgba(0, 0, 0, 0.25));
 }
 
+.placeholder h2 {
+  font-size: var(--h2-font-size);
+  color: var(--text-light);
+  transform: translateY(40px);
+  /* text-shadow: 0px 3px 0px #000000; */
+}
+
+.placeholder img {
+  visibility: hidden;
+}
+
+.placeholder:hover {
+  background: var(--darker-color);
+}
 /*=============== ABOUT ===============*/
 .about {
   height: 800px;
+  margin: var(--mb-2);
+  display: flex;
+  gap: 70px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: var(--background-color);
 }
 
+.pfp {
+  height: 250px;
+  width: 250px;
+}
+
+.about-text {
+  font-size: 20px;
+  text-align: justify;
+  line-height: 30px;
+}
 /*=============== CONTACT ===============*/
 .contact {
   height: 800px;
@@ -470,7 +501,7 @@ button{
   background-color: var(--dark-color);
 }
 
-.button--ghost{
+.button-ghost{
   border: 2px solid;
   background-color: transparent;
   border-radius: 3rem;
@@ -492,6 +523,23 @@ button{
   }
  
 /* For medium devices */
+@media screen and (min-width: 620px) {
+  .about {
+    flex-direction: row;
+  }
+
+  .pfp {
+    height: 250px;
+    width: 250px;
+  }
+
+  .about-text {
+    font-size: 25px;
+    text-align: justify;
+    line-height: 30px;
+    max-width: 400px;
+  }
+}
 
 @media screen and (min-width: 767px){
   body{
@@ -538,6 +586,30 @@ button{
     margin: var(--mb-1);
   }
 
+  .placeholder img {
+    visibility: visible;
+    height: 80px;
+    width: 100px;
+    transform: translateY(50px);
+    /* filter: drop-shadow(0px 5px 0px #000000); */
+  }
+
+  .about {
+    flex-direction: row;
+  }
+
+  .pfp {
+    height: 300px;
+    width: 300px;
+  }
+
+  .about-text {
+    font-size: 35px;
+    text-align: justify;
+    line-height: 40px;
+    max-width: 600px;
+  }
+
   .contact input {
     height: 70px;
     width: 500px;
@@ -565,6 +637,22 @@ button{
     height: 250px;
     width: 250px;
     margin: var(--mb-2-5);
+  }
+
+  .about {
+    flex-direction: row;
+  }
+
+  .pfp {
+    height: 450px;
+    width: 450px;
+  }
+  
+  .about-text {
+    font-size: 40px;
+    text-align: justify;
+    line-height: 50px;
+    max-width: 670px;
   }
 }
 
