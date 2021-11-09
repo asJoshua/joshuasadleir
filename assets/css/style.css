@@ -1,6 +1,6 @@
 /*=============== FONTS ===============*/
 @font-face {
-    font-family: Brandon;
+    font-family: BrandonBold;
     src: url("../extras/HVD\ Fonts\ -\ BrandonText-Bold.otf");
     font-weight: bold;
 }
@@ -11,6 +11,15 @@
     font-weight: lighter;
 }
 
+@font-face {
+  font-family: Brandon;
+  src: url("../extras/HVD\ Fonts\ -\ BrandonText-Regular.otf");
+}
+
+@font-face {
+  font-family: BrandonLight;
+  src: url("../extras/HVD\ Fonts\ -\ BrandonText-Light.otf");
+}
 /*=============== VARIABLES ===============*/
 :root {
   --header-height: 3.5rem;
@@ -26,7 +35,7 @@
   --container-color: #6441A4;
 
   /*========== Fonts & Sizes ==========*/
-  --main-font: 'Brandon', sans-serif;
+  --main-font: 'BrandonBold', sans-serif;
   --huge-font-size: 4rem;
   --xxl-font-size: 3rem;
   --xl-font-size: 2.5rem;
@@ -91,6 +100,12 @@ a{
   text-decoration: none;
 }
 
+p {
+  font-family: 'Brandon';
+  font-size: var(--normal-font-size);
+  text-align: justify;
+}
+
 img{
   max-width: 100%;
   height: auto;
@@ -118,21 +133,11 @@ button{
   padding: 4.5rem 0 2rem;
 }
 
-.section-title{
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-2);
-  text-align: center;
-}
-
 /*=============== LAYOUT ===============*/
 .container{
   max-width: 968px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
-}
-
-.grid{
-  display: grid;
 }
 
 .main{
@@ -508,6 +513,65 @@ button{
   padding: .75rem 1.5rem;
 }
 
+
+/*=============== CAS Page ===============*/
+.intro-content h1 {
+  font-size: var(--xxl-font-size);
+  background: #401970;
+  background: -webkit-linear-gradient(to right, #401970 0%, #9B5DE5 30%, #EF32EF 64%, #CC92F8 100%);
+  background: -moz-linear-gradient(to right, #401970 0%, #9B5DE5 30%, #EF32EF 64%, #CC92F8 100%);
+  background: linear-gradient(to right, #401970 0%, #9B5DE5 30%, #EF32EF 64%, #CC92F8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-content h3 {
+  font-family: 'Brandon';
+  font-size: var(--normal-font-size);
+  margin: var(--mb-0-5);
+}
+
+.intro-content-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-content-images img {
+  width: 93px;
+  height: 128px;
+  padding: var(--mb-0-25);
+}
+
+.creativity-img {
+  transform: translateY(20px);
+}
+
+.action-img {
+  transform: translateY(40px);
+}
+
+.service-img {
+  transform: translateY(60px);
+}
+
+/*=============== CAS ===============*/
+.cas {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.cas h1 {
+  font-size: var(--xl-font-size);
+  margin-bottom: var(--mb-1);
+}
+
 /*===============  Media Queries ===============*/
 /* For small devices */
 @media screen and (max-width: 320px){
@@ -538,6 +602,12 @@ button{
     text-align: justify;
     line-height: 30px;
     max-width: 400px;
+  }
+
+  /* CAS Page */
+  .intro-content-images img {
+    width: 150px;
+    height: 207px;
   }
 }
 
@@ -619,6 +689,33 @@ button{
     letter-spacing: 3px;
     font-size: var(--h3-font-size);
   }
+
+  /* CAS Page */
+  .intro-content {
+    margin-top: 5rem;
+  }
+
+  .intro-content-images img {
+    width: 181px;
+    height: 250px;
+  }
+
+  .creativity-img {
+    transform: translateY(40px);
+  }
+  
+  .action-img {
+    transform: translateY(80px);
+  }
+  
+  .service-img {
+    transform: translateY(120px);
+  }
+
+  .cas {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
 }
 
 /* For large devices */
@@ -626,11 +723,6 @@ button{
   .container{
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .section-title{
-    font-size: var(--h1-font-size);
-    margin-bottom: 3rem;
   }
 
   .placeholder {
@@ -659,5 +751,24 @@ button{
 @media screen and (min-width: 1440px){
   .home {
     height: 900px;
+  }
+
+  /* CAS Page */
+  .intro-content-images img {
+    width: 300px;
+    height: 415px;
+    margin: var(--mb-1);
+  }
+
+  .creativity-img {
+    transform: translateY(40px);
+  }
+  
+  .action-img {
+    transform: translateY(100px);
+  }
+  
+  .service-img {
+    transform: translateY(160px);
   }
 }
