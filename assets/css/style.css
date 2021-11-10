@@ -493,7 +493,7 @@ button{
   border-bottom: 3px black solid;
 }
 /*=============== BUTTONS ===============*/
-.button{
+.buttone{
   display: inline-block;
   background-color: var(--main-color);
   color: var(--title-color);
@@ -502,11 +502,11 @@ button{
   transition: .3s;
 }
 
-.button:hover{
+.buttone:hover{
   background-color: var(--dark-color);
 }
 
-.button-ghost{
+.buttone-ghost{
   border: 2px solid;
   background-color: transparent;
   border-radius: 3rem;
@@ -572,6 +572,124 @@ button{
   margin-bottom: var(--mb-1);
 }
 
+/*=============== IE Page ===============*/
+.nav-ie {
+  justify-content: center;
+}
+
+.ies-title {
+  font-size: var(--xxl-font-size);
+  text-align: center;
+  margin: 2rem;
+  background: red;
+  background: linear-gradient(to right, red 0%, orange 15%, yellow 30%, lime 45%, cyan 60%, dodgerblue 75%, magenta 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ie {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: var(--mb-1-5);
+}
+
+/* Math */
+.maths-content {
+  background-color: red;
+  border-radius: 30px;
+}
+
+.math-icon {
+  background-color: red;
+}
+
+/* GE */
+.ge-content {
+  background-color: orange;
+  border-radius: 30px;
+}
+
+.ge-icon {
+  background-color: orange;
+}
+
+
+/* Lengua */
+.lengua-content {
+  background-color: yellow;
+  border-radius: 30px;
+}
+
+.lengua-icon {
+  background-color: yellow;
+}
+
+/* Tok */
+.tok-content {
+  background-color: lime;
+  border-radius: 30px;
+}
+
+.tok-icon {
+  background-color: lime;
+}
+
+/* Informatica */
+.informatica-content {
+  background-color: cyan;
+  border-radius: 30px;
+}
+
+.informatica-icon {
+  background-color: cyan;
+}
+
+/* psicologia */
+.psic-content {
+  background-color: dodgerblue;
+  border-radius: 30px;
+}
+
+.psic-icon {
+  background-color: dodgerblue;
+}
+
+/* Mono */
+.mono-content {
+  background-color: magenta;
+  border-radius: 30px;
+}
+
+.mono-icon {
+  background-color: magenta;
+}
+
+.line {
+  width: 300px;
+  margin: 2rem;
+  background-color: black;
+  border: 3px solid black;
+}
+
+.ie-title {
+  font-size: var(--xl-font-size);
+  color: var(--text-dark);
+}
+
+.ie-sub {
+  font: 'Brandon';
+  color: black;
+  size: var(--normal-font-size);
+}
+
+.doc-icon {
+  font-size: 10rem;
+  padding: 40px;
+}
 /*===============  Media Queries ===============*/
 /* For small devices */
 @media screen and (max-width: 320px){
@@ -715,6 +833,11 @@ button{
   .cas {
     padding-top: 140px;
     padding-bottom: 140px;
+  }
+
+  /* IE Page */
+  .ies {
+    margin-top: 5rem;
   }
 }
 
