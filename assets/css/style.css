@@ -573,10 +573,6 @@ button{
 }
 
 /*=============== IE Page ===============*/
-.nav-ie {
-  justify-content: center;
-}
-
 .ies-title {
   font-size: var(--xxl-font-size);
   text-align: center;
@@ -588,19 +584,27 @@ button{
   -webkit-text-fill-color: transparent;
 }
 
-.ie {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
+.ies {
+  display: grid;
+  grid-template-columns: repeat(1 / 1fr);
+  grid-template-rows: repeat(6 / 1fr);
+  gap: 20px;
   align-items: center;
   text-align: center;
-  margin: var(--mb-1-5);
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.ie {
+  max-width: 500px;
 }
 
 /* Math */
 .maths-content {
   background-color: red;
   border-radius: 30px;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .math-icon {
@@ -611,6 +615,8 @@ button{
 .ge-content {
   background-color: orange;
   border-radius: 30px;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
 }
 
 .ge-icon {
@@ -622,6 +628,8 @@ button{
 .lengua-content {
   background-color: yellow;
   border-radius: 30px;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .lengua-icon {
@@ -632,6 +640,8 @@ button{
 .tok-content {
   background-color: lime;
   border-radius: 30px;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .tok-icon {
@@ -642,6 +652,8 @@ button{
 .informatica-content {
   background-color: cyan;
   border-radius: 30px;
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
 }
 
 .informatica-icon {
@@ -652,6 +664,8 @@ button{
 .psic-content {
   background-color: dodgerblue;
   border-radius: 30px;
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
 }
 
 .psic-icon {
@@ -662,6 +676,8 @@ button{
 .mono-content {
   background-color: magenta;
   border-radius: 30px;
+  grid-column: 1 / span 1;
+  grid-row: 6 / span 1;
 }
 
 .mono-icon {
@@ -839,6 +855,10 @@ button{
   .ies {
     margin-top: 5rem;
   }
+
+  .ies-title {
+    margin-top: 5rem;
+  }
 }
 
 /* For large devices */
@@ -893,5 +913,11 @@ button{
   
   .service-img {
     transform: translateY(160px);
+  }
+
+  
+  .ies {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
