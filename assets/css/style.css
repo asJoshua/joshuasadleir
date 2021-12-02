@@ -606,10 +606,11 @@ button{
 
 .creativity-title h1 span {
   font-size: var(--xxl-font-size);
-  background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
+  color: var(--other-color);
+  /* background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 /* Action */
@@ -628,10 +629,11 @@ button{
 
 .action-title h1 span {
   font-size: var(--xxl-font-size);
-  background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
+  color: #fff;
+  /* background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .action .exp {
@@ -657,10 +659,11 @@ button{
 
 .service-title h1 span {
   font-size: var(--xxl-font-size);
-  background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
+  color: var(--other-color);
+  /* background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 
