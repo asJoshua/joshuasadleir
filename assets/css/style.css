@@ -28,6 +28,7 @@
   --main-color: #9B5DE5;
   --light-color: #CC92F8;
   --dark-color: #6441A4;
+  --other-color: #171742;
   --darker-color: #1F2232;
   --text-light: #FFF;
   --text-dark: #000;
@@ -154,7 +155,7 @@ button{
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: #ccc;
   border-radius: 50px;
   height: 120px;
 }
@@ -513,64 +514,155 @@ button{
   padding: .75rem 1.5rem;
 }
 
-
 /*=============== CAS Page ===============*/
-.intro-content h1 {
+.cas-body {
+  background-color: var(--text-light);
+}
+
+.cas-header {
+  background-color: var(--other-color);
+}
+
+.cas-title {
+  margin: 1.5rem 0 0.725rem 0;
+  background-color: white;
+  min-width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 4px 0px rgba(204, 204, 204, 0.75);
+}
+
+.cas-intro {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--other-color);
+}
+
+.cas-intro h1 {
   font-size: var(--xxl-font-size);
-  background: #401970;
-  background: -webkit-linear-gradient(to right, #401970 0%, #9B5DE5 30%, #EF32EF 64%, #CC92F8 100%);
-  background: -moz-linear-gradient(to right, #401970 0%, #9B5DE5 30%, #EF32EF 64%, #CC92F8 100%);
-  background: linear-gradient(to right, #401970 0%, #9B5DE5 30%, #EF32EF 64%, #CC92F8 100%);
+  background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  margin: 0.5rem;
+}
+ 
+.cas-intro h3 {
+  font-size: var(--normal-font-size);
+  font-family: 'BrandonThin';
+  margin: 0 0 2rem 0;
+}
+
+.curve-b {
+  visibility: hidden;
+  width: 100vw;
+  height: 0;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.exp {
+  background-color: var(--other-color);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem 0 2rem 0;
+
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  box-shadow: 3px 3px 0px rgba(204, 204, 204, 0.75);
+}
+
+.exp img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.exp p {
+  font-family: 'Brandon';
+}
+
+/* Creativity */
+
+.creativity {
+  height: 2100px; 
+}
+
+.creativity-title h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creativity-title-img{
+  height: 75px;
+  width: 75px;
+}
+
+.creativity-title h1 span {
+  font-size: var(--xxl-font-size);
+  background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.intro-content h3 {
-  font-family: 'Brandon';
-  font-size: var(--normal-font-size);
-  margin: var(--mb-0-5);
+/* Action */
+
+.action {
+  height: 2100px;
+  background-color: var(--other-color);
 }
 
-.intro-content-images {
+.action-title h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 2rem;
 }
 
-.intro-content-images img {
-  width: 93px;
-  height: 128px;
-  padding: var(--mb-0-25);
+.action-title h1 span {
+  font-size: var(--xxl-font-size);
+  background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.creativity-img {
-  transform: translateY(20px);
+.action .exp {
+  background-color: white;
 }
 
-.action-img {
-  transform: translateY(40px);
+.action .exp p {
+  color: var(--text-dark);
 }
 
-.service-img {
-  transform: translateY(60px);
+/* Service */
+
+.service {
+  height: 2100px;
 }
 
-/*=============== CAS ===============*/
-.cas {
+.service-title h1 {
   display: flex;
-  gap: 50px;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 2rem;
 }
 
-.cas h1 {
-  font-size: var(--xl-font-size);
-  margin-bottom: var(--mb-1);
+.service-title h1 span {
+  font-size: var(--xxl-font-size);
+  background: linear-gradient(157.89deg, #FF0000 29.32%, #FFC700 37.13%, #FFF500 45.04%, #00FF29 52.95%, #00FFF0 60.59%, #0057FF 68.76%, #EB00FF 76.15%);  background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 /*=============== IE Page ===============*/
 .ies-title {
@@ -623,7 +715,6 @@ button{
   background-color: orange;
 }
 
-
 /* Lengua */
 .lengua-content {
   background-color: yellow;
@@ -660,7 +751,7 @@ button{
   background-color: cyan;
 }
 
-/* psicologia */
+/* Psicologia */
 .psic-content {
   background-color: dodgerblue;
   border-radius: 30px;
@@ -719,6 +810,19 @@ button{
       justify-content: center;
     }
   }
+
+  @media screen and (min-width: 470px) {
+    /* CAS Page */
+    .cas-intro {
+      height: 500px;
+    }
+
+    .exp {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+
  
 /* For medium devices */
 @media screen and (min-width: 620px) {
@@ -737,11 +841,25 @@ button{
     line-height: 30px;
     max-width: 400px;
   }
+    /* CAS Page */
+    .cas-intro {
+      height: 580px;
+    }
+    
+  .creativity{
+    height: 1600px;
+  }
+ 
+  .action{
+    height: 1600px;
+  }
+ 
+  .service{
+    height: 1600px;
+  }
 
-  /* CAS Page */
-  .intro-content-images img {
-    width: 150px;
-    height: 207px;
+  .exp {
+    margin: 4rem 0 4rem 0;
   }
 }
 
@@ -825,30 +943,19 @@ button{
   }
 
   /* CAS Page */
-  .intro-content {
+  .cas-intro {
+    height: 580px;
     margin-top: 5rem;
   }
 
-  .intro-content-images img {
-    width: 181px;
-    height: 250px;
+  .curve-b {
+    height: 100%;
+    visibility: visible;
   }
 
-  .creativity-img {
-    transform: translateY(40px);
-  }
-  
-  .action-img {
-    transform: translateY(80px);
-  }
-  
-  .service-img {
-    transform: translateY(120px);
-  }
-
-  .cas {
-    padding-top: 140px;
-    padding-bottom: 140px;
+  .exp img {
+    height: 333px;
+    width: 333px;
   }
 
   /* IE Page */
@@ -896,26 +1003,6 @@ button{
     height: 900px;
   }
 
-  /* CAS Page */
-  .intro-content-images img {
-    width: 300px;
-    height: 415px;
-    margin: var(--mb-1);
-  }
-
-  .creativity-img {
-    transform: translateY(40px);
-  }
-  
-  .action-img {
-    transform: translateY(100px);
-  }
-  
-  .service-img {
-    transform: translateY(160px);
-  }
-
-  
   .ies {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
