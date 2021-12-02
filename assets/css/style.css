@@ -691,6 +691,10 @@ button{
   max-width: 500px;
 }
 
+.ie button:hover {
+  transform: scale(0.98);
+}
+
 /* Math */
 .maths-content {
   background-color: red;
