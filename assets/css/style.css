@@ -388,6 +388,8 @@ button{
 
 .placeholder:hover {
   background: var(--darker-color);
+  height: 260px;
+  width: 260px;
 }
 /*=============== ABOUT ===============*/
 .about {
