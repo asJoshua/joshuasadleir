@@ -12,7 +12,6 @@
     0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-  
 .a:nth-child(2) {
   -webkit-animation-delay: 0.1s;
   animation-delay: 0.1s;
@@ -33,7 +32,7 @@
   animation-delay: 0.4s;
 }
 
-/* ANIMATION */
+/*=============== ANIMATION ===============*/
 @keyframes bounce {
   100% {
     top: -20px;

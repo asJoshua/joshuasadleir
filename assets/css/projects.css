@@ -1,5 +1,5 @@
 .pr {
-  background: lightcyan;
+  background: aqua;
   padding-top: 20px;
 }
 
@@ -46,7 +46,4 @@
   .item:nth-child(4) {animation-delay:calc(-3*var(--d)/var(--n)); background-color: limegreen;}
   .item:nth-child(5) {animation-delay:calc(-4*var(--d)/var(--n)); background-color: lightblue;}
   .item:nth-child(6) {animation-delay:calc(-5*var(--d)/var(--n)); background-color: turquoise;}
-  .item:nth-child(7) {animation-delay:calc(-6*var(--d)/var(--n)); background-color: purple;}
-
-  /*.item:nth-child(N) {animation-delay:calc(-(N - 1)*var(--d)/var(--n))}*/
-  
+  .item:nth-child(7) {animation-delay:calc(-6*var(--d)/var(--n)); background-color: purple;}  

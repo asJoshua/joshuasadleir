@@ -1,5 +1,5 @@
 // Show Menu
-const navMenu = document.getElementById('nav-menu'),
+var navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
@@ -18,10 +18,10 @@ if(navClose){
 }
 
 // Remove Menu on Mobile
-const navLink = document.querySelectorAll('.nav-link')
+var navLink = document.querySelectorAll('.nav-link')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
+    var navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
