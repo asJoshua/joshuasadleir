@@ -3,6 +3,7 @@ var panda = document.getElementById('panda')
 var chat = document.getElementById('chat')
 
 function singleClick() {
+    // Make PB bounce
     if (panda.classList != 'bounce') { 
         panda.classList.add('bounce');
     }
@@ -12,7 +13,6 @@ function singleClick() {
     }, 1000)
 
     // Make Chat appear / disappear
-
     if (chat.classList != 'show') {  
         chat.classList.add('show');
     }
@@ -23,13 +23,11 @@ function singleClick() {
 }
 
 function doubleClick() {
-    if (panda.classList != 'large') {  
-        panda.classList.add('large');
-    }
-        
+    document.getElementById('panda').src="assets/imgs/svgs/Panda Angry.svg";
+
     setTimeout(function(){
-        panda.classList.remove('large');
-    },1000)
+        document.getElementById('panda').src="assets/imgs/svgs/Panda Default.svg";
+    }, 1000)
 }
 
 // Timer for clicks
@@ -49,10 +47,14 @@ panda.addEventListener('click', function() {
     }
 }, false);
 
-// Follow mouse on drag
-document.addEventListener('mousemove', onMouseMove);
-
-const onMouseMove = (e) =>{
-    panda.style.left = e.pageX + 'px';
-    panda.style.top = e.pageY + 'px';
-}
+// Do a trick
+var action = document.getElementById('trick');
+trick.addEventListener('click', function() {
+    if (panda.classList != 'fa-spin') {  
+        panda.classList.add('fa-spin');
+    }
+        
+    setTimeout(function(){
+        panda.classList.remove('fa-spin');
+    },2000)
+});

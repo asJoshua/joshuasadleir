@@ -1,7 +1,6 @@
-// Show Menu
-var navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+var navMenu = document.getElementById('nav-menu');
+var navToggle = document.getElementById('nav-toggle');
+var navClose = document.getElementById('nav-close');
 
 // Menu Show
 if(navToggle){
